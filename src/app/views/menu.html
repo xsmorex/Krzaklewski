@@ -1,0 +1,16 @@
+<div class="menu">
+  <div class="title">TheTrackTroll</div>
+
+  <span ng-show="state == menuStates.ENTRY">
+    <a ng-click="play()">Play</a>
+    <a ng-click="settings()">Settings</a>
+    <a ng-click="ranking()">Ranking</a>
+    <a ng-click="exit()">Exit</a>
+  </span>
+
+  <span ng-show="state == menuStates.MODE_SELECTION">
+    <a ng-click="play('real')">Real mode</a>
+    <a ng-click="exit('simulation')">Simulation</a>
+    <a ng-click="main()">Go back</a>
+  </span>
+</div>
